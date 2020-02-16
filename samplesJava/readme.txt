@@ -1,1 +1,0 @@
-Some sample code of jdk and common package.
