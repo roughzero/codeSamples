@@ -9,7 +9,7 @@ import java.rmi.registry.LocateRegistry;
 public class SampleServerMain {
     public static void main(String[] args) {
         try {
-            SampleService sampleService = new SampleSeriveImpl();
+            SampleService sampleService = new SampleServiceImpl();
             //注册通讯端口
             LocateRegistry.createRegistry(8080);
             //注册通讯路径
