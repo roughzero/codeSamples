@@ -1,0 +1,136 @@
+<TranData>
+	<BaseInfo>
+		<BankDate>20150503</BankDate>
+		<BankTime>17:57:02</BankTime>
+		<BankCode>46</BankCode>
+		<ZoneNo>8611</ZoneNo>
+		<BrNo>BJQNKJ</BrNo>
+		<TellerNo>901010900003</TellerNo>
+		<TransrNo />
+		<FunctionFlag>M1</FunctionFlag>
+		<InsuID>001</InsuID>
+		<Contflag />
+	</BaseInfo>
+	<LCGrpContS>
+		<LCGrpContCount>1</LCGrpContCount>
+		<BatchNo>hus15050317361182008</BatchNo>
+		<PayTransrNo>B1505031737128685310</PayTransrNo>
+		<PayPlat>4</PayPlat>
+		<LCGrpCont>
+			<ProposalGrpContNo />
+			<PrtNo />
+			<PolApplyDate>20150503</PolApplyDate>
+			<CValiDate>20150504</CValiDate>
+			<ContStartDate>20150504</ContStartDate>
+			<ContEndDate>20150505</ContEndDate>
+			<CValiTime>06:40:00</CValiTime>
+			<FlightNo>CA4589</FlightNo>
+			<LoanStartDate />
+			<LoanEndDate />
+			<LoanContractNo />
+			<LoanContractAmt />
+			<AccName />
+			<AccBankCode />
+			<BankAccNo />
+			<PayIntv />
+			<PayMode />
+			<GetPolMode />
+			<Password />
+			<SpecContent />
+			<TempFeeNo />
+			<AgentCode />
+			<AgentGroup />
+			<AgentName />
+			<LCAppnt>
+				<AppntName>杨琴</AppntName>
+				<AppntSex>1</AppntSex>
+				<AppntBirthday>19880929</AppntBirthday>
+				<AppntIDType>0</AppntIDType>
+				<AppntIDNo>513701198809294028</AppntIDNo>
+				<AppntOfficePhone />
+				<AppntMobile>1380013800</AppntMobile>
+				<AppntPhone>1380013800</AppntPhone>
+				<MailAddress />
+				<MailZipCode />
+				<HomeAddress />
+				<HomeZipCode />
+				<JobCode>9999999</JobCode>
+				<RelaToMain>00</RelaToMain>
+				<RelaToInsured>00</RelaToInsured>
+				<AppntEmail>1380013800</AppntEmail>
+			</LCAppnt>
+			<LCConts>
+				<LCCont>
+					<LCInsureds>
+						<LCInsuredCount>1</LCInsuredCount>
+						<LCInsured>
+							<Name>杨琴</Name>
+							<Sex>1</Sex>
+							<Birthday>19880929</Birthday>
+							<IDType>0</IDType>
+							<IDNo>513701198809294028</IDNo>
+							<JobCode>9999999</JobCode>
+							<HomeAddress />
+							<HomeZipCode />
+							<HomePhone>1380013800</HomePhone>
+							<RelaToMain>00</RelaToMain>
+							<RelaToAppnt>00</RelaToAppnt>
+							<Risks>
+								<RiskCount>1</RiskCount>
+								<Risk>
+									<RiskCode>578200</RiskCode>
+									<MainRiskCode>578200</MainRiskCode>
+									<RiskType />
+									<RiskName />
+									<Amnt>200</Amnt>
+									<Prem />
+									<Mult>1</Mult>
+									<Rank />
+									<PayIntv />
+									<CostIntv />
+									<CostDate />
+									<Years />
+									<SpecContent />
+									<PayEndYearFlag />
+									<PayEndYear />
+									<GetYearFlag />
+									<GetYear />
+									<InsuYearFlag />
+									<InsuYear />
+									<GetIntv />
+									<GetBankCode />
+									<GetBankAccNo />
+									<GetAccName />
+									<AutoPayFlag />
+									<BonusPayMode />
+									<SubFlag />
+									<BonusGetMode />
+									<HealthFlag />
+									<FullBonusGetMode />
+									<FirstRate />
+									<SureRate />
+									<LCBnfs>
+										<LCBnfCount>1</LCBnfCount>
+										<LCBnf>
+											<Name>法定</Name>
+											<Sex>0</Sex>
+											<BnfType>1</BnfType>
+											<BnfNo>1</BnfNo>
+											<BnfGrade>1</BnfGrade>
+											<Birthday>1000-00-00</Birthday>
+											<IDType>2</IDType>
+											<IDNo>123</IDNo>
+											<BelongToInsured>00</BelongToInsured>
+											<RelationToInsured>00</RelationToInsured>
+											<BnfLot>1</BnfLot>
+										</LCBnf>
+									</LCBnfs>
+								</Risk>
+							</Risks>
+						</LCInsured>
+					</LCInsureds>
+				</LCCont>
+			</LCConts>
+		</LCGrpCont>
+	</LCGrpContS>
+</TranData>

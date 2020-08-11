@@ -11,7 +11,7 @@ import java.util.Random;
 
 /**
  * 测试 StringBuffer 与 String 拼接 String 的效率差.
- * 
+ *
  * @author rough
  */
 public class SampleOfStringBuffer {

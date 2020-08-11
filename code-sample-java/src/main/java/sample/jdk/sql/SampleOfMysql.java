@@ -12,8 +12,8 @@ public class SampleOfMysql {
         //                .createConnection("com.mysql.jdbc.Driver", "jdbc:mysql://rough-mysql/test", "rough", "rough");
 //        Connection conn = JdbcUtils.createConnection("com.mysql.jdbc.Driver", "jdbc:mysql://rough-server/demo", "rough",
 //                "rough");
-      Connection conn = JdbcUtils.createConnection("com.mysql.jdbc.Driver", "jdbc:mysql://10.56.80.228/huarui", "huar_test",
-      "huar_test");
+        Connection conn = JdbcUtils.createConnection("com.mysql.jdbc.Driver", "jdbc:mysql://10.56.80.228/huarui", "huar_test",
+                "huar_test");
         System.out.println(conn);
         ResultSet rs = conn.getMetaData().getTables(null, "rough", "%", null);
         while (rs.next()) {

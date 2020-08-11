@@ -12,7 +12,7 @@ public class SampleOfThread extends Thread {
     }
 
     public static void main(String[] args) {
-        SampleOfThread[] threads = { new SampleOfThread(), new SampleOfThread() };
+        SampleOfThread[] threads = {new SampleOfThread(), new SampleOfThread()};
         for (int i = 0; i < threads.length; i++) {
             threads[i].start();
         }

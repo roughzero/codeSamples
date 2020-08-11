@@ -15,34 +15,34 @@ import java.util.Random;
 
 import javax.imageio.ImageIO;
 
-/** 
- * 验证码图片生成器 
- *  
- * @author WuZhengFei 
- *  
+/**
+ * 验证码图片生成器
+ *
+ * @author WuZhengFei
  */
 public class IdentifyingCode {
-    /** 
-     * 验证码图片的宽度。 
+    /**
+     * 验证码图片的宽度。
      */
     private int width = 120;
-    /** 
-     * 验证码图片的高度。 
+    /**
+     * 验证码图片的高度。
      */
     private int height = 60;
-    /** 
-     * 验证码的数量。 
+    /**
+     * 验证码的数量。
      */
-    private Random random = new Random();
+    private final Random random = new Random();
 
     public IdentifyingCode() {
     }
 
-    /** 
-     * 生成随机颜色 
-     * @param fc    前景色 
-     * @param bc    背景色 
-     * @return  Color对象，此Color对象是RGB形式的。 
+    /**
+     * 生成随机颜色
+     *
+     * @param fc 前景色
+     * @param bc 背景色
+     * @return Color对象，此Color对象是RGB形式的。
      */
     public Color getRandomColor(int fc, int bc) {
         if (fc > 255)
@@ -55,10 +55,11 @@ public class IdentifyingCode {
         return new Color(r, g, b);
     }
 
-    /** 
-     * 绘制干扰线 
-     * @param g Graphics2D对象，用来绘制图像 
-     * @param nums  干扰线的条数 
+    /**
+     * 绘制干扰线
+     *
+     * @param g    Graphics2D对象，用来绘制图像
+     * @param nums 干扰线的条数
      */
     public void drawRandomLines(Graphics2D g, int nums) {
         g.setColor(this.getRandomColor(160, 200));
@@ -71,11 +72,12 @@ public class IdentifyingCode {
         }
     }
 
-    /** 
-     * 获取随机字符串， 
-     *      此函数可以产生由大小写字母，汉字，数字组成的字符串 
-     * @param length    随机字符串的长度 
-     * @return  随机字符串 
+    /**
+     * 获取随机字符串，
+     * 此函数可以产生由大小写字母，汉字，数字组成的字符串
+     *
+     * @param length 随机字符串的长度
+     * @return 随机字符串
      */
     public String drawRandomString(int length, Graphics2D g) {
         StringBuffer strbuf = new StringBuffer();
@@ -91,7 +93,7 @@ public class IdentifyingCode {
                     itmp = random.nextInt(26) + 97;
                     temp = String.valueOf((char) itmp);
                 case 3: //生成汉字  
-                    String[] rBase = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f" };
+                    String[] rBase = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
                     int r1 = random.nextInt(3) + 11; //生成第1位的区码  
                     String strR1 = rBase[r1]; //生成11～14的随机数  
                     int r2; //生成第2位的区码  

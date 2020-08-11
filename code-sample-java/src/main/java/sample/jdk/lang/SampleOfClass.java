@@ -4,7 +4,7 @@
 package sample.jdk.lang;
 
 public class SampleOfClass {
-    @SuppressWarnings({ "rawtypes" })
+    @SuppressWarnings({"rawtypes"})
     public static void main(String[] args) {
         Class clazz = String.class;
         System.out.println(clazz.isInstance(""));

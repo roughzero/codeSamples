@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  * 分摊器的基类, 用来进行分摊计算.<p>
- *
+ * <p>
  * 使用 allocate() 方法来进行分摊, 在使用此方法前, 应将相关设置设置好:<br>
  * <ul>
  *  <li>setColumnNames() 方法用来设置需要用的字段名称.</li>
@@ -32,7 +32,8 @@ public abstract class Allocater {
     public static final String KEY_COLUMN_DEPARTMENT = "department";
     public static final String KEY_COLUMN_AMOUNT = "amount";
 
-    private static Map<String, String> DEFAULT_ALLOCATER_COLUMN_NAMES = new HashMap<String, String>();
+    private static final Map<String, String> DEFAULT_ALLOCATER_COLUMN_NAMES = new HashMap<String, String>();
+
     static {
         DEFAULT_ALLOCATER_COLUMN_NAMES.put(KEY_COLUMN_SEGMENT1, "segment1");
         DEFAULT_ALLOCATER_COLUMN_NAMES.put(KEY_COLUMN_SEGMENT2, "segment2");

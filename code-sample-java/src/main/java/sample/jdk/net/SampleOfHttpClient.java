@@ -9,13 +9,14 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 public class SampleOfHttpClient {
 
     private static final String DEFAULT_CHARSET = "UTF-8";
 
-    /**   
-     * 程序中访问http数据接口   
+    /**
+     * 程序中访问http数据接口
      */
     public static String getURLContent(String urlStr) throws IOException {
 
@@ -37,13 +38,14 @@ public class SampleOfHttpClient {
         return result;
     }
 
-    /**  
-    * post方式请求http服务  
-    * @param urlStr  
-    * @param params   name=yxd&age=25  
-    * @return  
-    * @throws Exception  
-    */
+    /**
+     * post方式请求http服务
+     *
+     * @param urlStr
+     * @param params name=yxd&age=25
+     * @return
+     * @throws Exception
+     */
     public static String getURLByPost(String urlStr, String params) throws Exception {
         URL url = new URL(urlStr);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -56,7 +58,7 @@ public class SampleOfHttpClient {
         BufferedReader in = null;
         StringBuilder sb = new StringBuilder();
         try {
-            in = new BufferedReader(new InputStreamReader(conn.getInputStream(), "UTF-8"));
+            in = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8));
             String str = null;
             while ((str = in.readLine()) != null) {
                 sb.append(str);

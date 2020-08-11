@@ -12,7 +12,7 @@ public class SampleOfRunnable implements Runnable {
 
     public static void main(String[] args) {
         Runnable runnable = new SampleOfRunnable();
-        Thread[] threads = { new Thread(runnable), new Thread(runnable) };
+        Thread[] threads = {new Thread(runnable), new Thread(runnable)};
         for (int i = 0; i < threads.length; i++) {
             threads[i].start();
         }

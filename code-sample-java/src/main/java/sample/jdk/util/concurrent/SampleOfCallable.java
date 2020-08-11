@@ -15,7 +15,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 public class SampleOfCallable implements Callable<Boolean> {
-    private static Log logger = LogFactory.getLog(SampleOfCallable.class);
+    private static final Log logger = LogFactory.getLog(SampleOfCallable.class);
 
     @Override
     public Boolean call() throws Exception {

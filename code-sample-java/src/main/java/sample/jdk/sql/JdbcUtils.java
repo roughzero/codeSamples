@@ -11,10 +11,10 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 public final class JdbcUtils {
-    private static Log logger = LogFactory.getLog(JdbcUtils.class);
+    private static final Log logger = LogFactory.getLog(JdbcUtils.class);
 
     public static Connection createConnection(String driver, String url, String userName,
-            String password) throws Exception {
+                                              String password) throws Exception {
         Class.forName(driver);
 
         Connection result = DriverManager.getConnection(url, userName, password);
@@ -51,7 +51,7 @@ public final class JdbcUtils {
             }
         }
     }
-    
+
     public static void closeConnectionSilently(Connection conn) {
         if (conn != null) {
             try {

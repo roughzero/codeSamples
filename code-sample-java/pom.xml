@@ -37,5 +37,24 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.oracle.driver</groupId>
+            <artifactId>jdbc-driver</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rough.preparation</groupId>
+            <artifactId>preparation-utils</artifactId>
+        </dependency>
     </dependencies>
 </project>
