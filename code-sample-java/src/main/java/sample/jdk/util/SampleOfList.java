@@ -17,5 +17,8 @@ public class SampleOfList {
             }
         });
         System.out.println(testList);
+
+        List<Integer> subList = testList.subList(0, 1);
+        System.out.println(subList.size());
     }
 }
