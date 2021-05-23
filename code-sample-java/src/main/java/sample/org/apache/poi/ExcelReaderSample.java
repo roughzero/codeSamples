@@ -79,15 +79,15 @@ public class ExcelReaderSample {
 
     static void readFromXlsx() throws Exception {
         File file = new File("test-file/mso/in_001.xlsx");
-        XSSFWorkbook xssfWorkbook = new XSSFWorkbook(file);
-        XSSFSheet xssfSheet = xssfWorkbook.getSheetAt(0);
+        XSSFWorkbook workbook = new XSSFWorkbook(file);
+        XSSFSheet sheet = workbook.getSheetAt(0);
 
-        int rowStart = xssfSheet.getFirstRowNum();
-        int rowEnd = xssfSheet.getLastRowNum();
+        int rowStart = sheet.getFirstRowNum();
+        int rowEnd = sheet.getLastRowNum();
 
         System.out.println("Read from xlsx file start.");
         for (int i = rowStart; i <= rowEnd; i++) {
-            XSSFRow row = xssfSheet.getRow(i);
+            XSSFRow row = sheet.getRow(i);
             if (null == row) continue;
 
             int cellStart = row.getFirstCellNum();
